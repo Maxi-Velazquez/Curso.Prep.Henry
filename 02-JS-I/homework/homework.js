@@ -35,32 +35,32 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return x+y;
+  return x + y;
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return x-y;
+  return x - y;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  return x*y;
+  return x * y;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  return x/y;
+  return x / y;
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x===y){
+  if (x === y){
     return true;
   }
   return false;
@@ -80,7 +80,7 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num<90){
+  if (num < 90){
     return true;
   }
   return false;
@@ -90,7 +90,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num>50){
+  if (num > 50){
     return true;
   }
   return false;
@@ -99,8 +99,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  var r = x % y;
-  return r;
+  return x % y;
 }
 
 function esPar(num) {
@@ -200,24 +199,23 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  var area=alto*ancho;
-  return area;
+  
+  return alto * ancho;
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  var perimetro=lado*4;
-  return perimetro;
+  
+  return lado * 4;
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  areatriangulo=(base*altura)/2;
-  return areatriangulo;
+  return (base*altura)/2;
 }
 
 
@@ -225,8 +223,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var dolar=euro*1.20;
-  return dolar;
+  return euro*1.20;
 }
 
 
@@ -235,7 +232,31 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
+  if (letra === 'a'){
+    return 'Es vocal';
+  }else {if (letra === 'e'){
+    return 'Es vocal';
+  }else {if (letra === 'i'){
+    return 'Es vocal';
+  }else {if (letra === 'o'){
+    return 'Es vocal';
+  }else {if (letra === 'u'){
+    return 'Es vocal';
+  }
+  }
+  }
+  }
+  }
+  //  Esto es lo mismo pero mas corto de escribir:
+  //  if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u'){
+  //    return 'Es vocal';
+  //  }
 
+  if (letra.length !== 1){
+    return 'Dato incorrecto';
+  }else{
+    return 'No es vocal';
+  }
 }
 
 
