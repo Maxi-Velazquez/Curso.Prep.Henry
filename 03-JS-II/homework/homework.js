@@ -207,7 +207,7 @@ function tablaDelSeis(){
   //Escribe tu código aquí  
   let array6 = []     //DECLARACION DEL ARREGLO
   for (let i = 0; i < 11; i++) {
-    array6[i] = 6*i;  // forma simple : array6.push(6 * i)
+    array6.push(6*i) ;  // forma simple : array6.push(6 * i)
   }
   return array6;
 }
